@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+    <div class = "box">
+        <form name = "calc">
+          <input type = "button" class = "display" name = "display1"></input>
+          <div class = "parent">
+            <input type = "button" class = "button" value = "1" onclick = "calc.display1.value+='1'"></input>
+            <input type = "button" class = "button" value = "2" onclick = "calc.display1.value+='2'"></input>
+            <input type = "button" class = "button" value = "3" onclick = "calc.display1.value+='3'"></input>
+            <input type = "button" class = "buttonspc" value = "+" onclick = "calc.display1.value+='+'"></input>
+            <input type = "button" class = "button" value = "4" onclick = "calc.display1.value+='4'"></input>
+            <input type = "button" class = "button" value = "5" onclick = "calc.display1.value+='5'"></input>
+            <input type = "button" class = "button" value = "6" onclick = "calc.display1.value+='6'"></input>
+            <input type = "button" class = "buttonspc" value = "-" onclick = "calc.display1.value+='-'"></input>
+            <input type = "button" class = "button" value = "7" onclick = "calc.display1.value+='7'"></input>
+            <input type = "button" class = "button" value = "8" onclick = "calc.display1.value+='8'"></input>
+            <input type = "button" class = "button" value = "9" onclick = "calc.display1.value+='9'"></input>
+            <input type = "button" class = "buttonspc" value = "x" onclick = "calc.display1.value+='*'"></input>
+            <input type = "button" class = "buttonspc" value = "C" onclick = "calc.display1.value+=' '"></input>
+            <input type = "button" class = "button" value = "0" onclick = "calc.display1.value+='0'"></input>
+            <input type = "button" class = "buttonspc" value = "/" onclick = "calc.display1.value+='/'"></input>
+            <input type = "button" class = "buttonspc" value = "=" onclick = "calc.display1.value=eval(calc.display1.value)"></input>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
